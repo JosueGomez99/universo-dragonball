@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dragon Ball Saga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header con el logo y navegación -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Dragon Ball Logo" width="100">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sagas">Sagas y Peliculas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner principal -->
+  <section id="inicio" class="banner">
+    <h1>Bienvenidos al Mundo Dragon Ball</h1>
+    <p>Explora las Sagas y Peliculas de Dragon Ball.</p>
+  </section>
+
+  <!-- Sección de las sagas -->
+  <section id="sagas" class="sagas-section">
+    <h2>Sagas de Dragon Ball</h2>
+    <div class="sagas-grid">
+      <div class="saga-card" data-saga="dragonBall">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0VaGC8AkY4FqqIzT31GdIaYbeSl1S5kKpua1k4kwB8SFZGFXCydhKzhV55-S3m2qGzYqo5ClWnn-ajmbqVcrl0TCArB8emhTkPdjvWfvzE2c-wFwdjVtaKeQoI-VMdEq2pIhihH62bxb_/s1600/Dragon+ball+panini+manga+comics.png" alt="Dragon Ball" class="saga-image">
+        <h3>Dragon Ball</h3>
+        <p>Explora la saga original.</p>
+      </div>
+      <div class="saga-card" data-saga="dragonBallZ">
+        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/0a/35/0a35fcb20105471b1cfe987eca0b6150.jpg" alt="Dragon Ball Z" class="saga'image">
+        <h3>Dragon Ball Z</h3>
+        <p>Revive los momentos épicos.</p>
+      </div>
+      <div class="saga-card" data-saga="dragonBallGT">
+        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/74/2e/742e303c21837fac5d2eb2272b1be3d6.jpg" alt="Dragon Ball Gt" class="saga'image">
+        <h3>Dragon Ball GT</h3>
+        <p>La saga que continúa la historia.</p>
+      </div>
+      <div class="saga-card" data-saga="dragonBallSuper">
+        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/bb/bd/bbbdf81de3ae29640d731605588f6c50.jpg" alt="Dragon Ball Super" class="saga'image">
+        <h3>Dragon Ball Super</h3>
+        <p>La nueva era de Dragon Ball.</p>
+      </div>
+      <div class="saga-card" data-saga="dragonBallMovies">
+        <img src="https://images.abandomoviez.net/db/foto/db_13449.jpg" alt="Dragon Ball Movies" class="saga'image">
+        <h3>Películas</h3>
+        <p>Disfruta de las películas de Dragon Ball.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de visualización del video -->
+  <section id="videoSection" class="video-section hidden">
+    <div class="video-container">
+      <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="episodeList" class="episode-list">
+      <!-- Lista de episodios o películas aparecerá aquí -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Dragon Ball Fan Site. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Enlace al archivo JS -->
+  <script src="app.js"></script>
+  <script src="dbz.js"></script>
+  <script src="db.js"></script>
+  <script src="dbgt.js"></script>
+  <script src="dbs.js"></script>
+  <script src="dbmovies.js"></script>
+</body>
+</html>
